@@ -1,0 +1,1033 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #242424;
+}
+.logo{
+    position:absolute;
+    left:20px;
+    height:50px;
+    width:150px;
+
+
+}
+.headcontainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height:90px;
+    padding: 20px;
+    background-color: rgb(30, 30, 30);
+}
+.searchform{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+.navbar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    margin-left:auto;
+    margin-right:25px;
+}
+.navbar a{
+    color:white;
+    font-size:20px;
+    text-decoration: none;
+}
+.searchbutton{
+    border-radius:20px;
+    border:none;
+    cursor:pointer;
+    padding:10px 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart{
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    gap:20px;
+    font-size: 40px;
+    text-decoration: none;
+
+}
+.Profile{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 43px;
+    text-decoration: none;
+    gap:20px;
+}
+
+
+.mainframe1{
+    margin-top: 90px;
+    min-height: 700px;
+    padding-top: 100px;
+    background-image: url("images/banners/12335.jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+.box{
+    width: 85%;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    gap:50px;
+}
+.details {
+    width:40%;
+    padding:30px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius:20px;
+    color:white;
+}
+.details h1{
+    color:white;
+    font-size:28px;
+    text-align:center;
+    margin-bottom:25px;
+}
+.gameinfo{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom:30px;
+    text-align:center;
+    border: 1px solid #555555;
+    border-radius: 20px;
+    color: #eeeeee;
+    background-color: rgba(35, 35, 35, 0.9);
+}
+.users{
+    margin-top: 10px;
+    text-align:center;
+    font-size:20px;
+    margin-bottom:25px;
+    color: #dddddd;
+}
+.selector1{
+    display:block;
+    width: 220px;
+    height: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    border: 1px solid #777777;
+    border-radius: 6px;
+    color: #eeeeee;
+    background-color: #292929;
+    font-size:20px;
+    margin-bottom:25px;
+}
+.price{
+    text-align:center;
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #eeeeee;
+}
+
+.price span:first-child {
+    margin-right: 12px;
+    color: #bdbdbd;
+    text-decoration: line-through;
+}
+
+.price span:nth-child(2) {
+    margin-right: 12px;
+    color: #ff6422 !important;
+}
+
+.price span:last-child {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.cartarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-top: 10px;
+}
+
+.cartarea button {
+    height: 52px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cartarea button:first-child {
+    width: 52px;
+    padding: 0px;
+    border: 1px solid #777777;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.35);
+    font-size: 24px;
+}
+
+.cartarea button:last-child {
+    width: 180px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    background-color: #ff6422;
+    font-weight: bold;
+}
+
+.cartarea button:first-child:hover {
+    border-color: #ff6422;
+    color: #ff6422;
+}
+
+.cartarea button:last-child:hover {
+    background-color: #e94f12;
+}
+.mainframe2 {
+    min-height: 500px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: white;
+    background-color: #242424;
+}
+
+.box2 {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    grid-template-areas:
+        "about reviews"
+        "about details"
+        "tags details";
+    gap: 30px;
+}
+.about {
+    grid-area: about;
+}
+.about h1 {
+    margin-bottom: 15px;
+    color: white;
+    font-size: 28px;
+}
+.about p {
+    color: #a8a8a8;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.usertags {
+    grid-area: tags;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #a8a8a8;
+}
+
+.reviews {
+    grid-area: reviews;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.usertags button {
+    padding: 8px 14px;
+    border: 2px solid #5d5d5d;
+    border-radius: 9px;
+    color: white;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.Moviecountry {
+    grid-area: details;
+    color: #a8a8a8;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.reviews button {
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    background-color: #e65d20;
+    font-size: 20px;
+}
+
+.reviews a {
+    color: #ff7b32;
+}
+
+.mainframe3 {
+    padding-top: 35px;
+    padding-bottom: 60px;
+    background-color: #242424;
+}
+
+.mainframe4 {
+    padding-top: 35px;
+    padding-bottom: 60px;
+    background-color: #242424;
+}
+
+.visuals {
+    position: static;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: left;
+}
+.video1{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: left;
+    padding-bottom: 60px;
+    background-color: #242424;
+}
+
+.video1 video {
+    display: block;
+    width: min(1000px, 100%);
+    height: auto;
+    border-radius: 12px;
+}
+
+.gallery {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.childgall1 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.childgall2 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.childgall3 {
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.childgall4 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.childgall5 {
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.mainframe5 {
+    background-color: #242424;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    color: white;
+}
+
+.gamefeaturestitle {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #f6f6f6;
+}
+
+.gamefeaturesgrid {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 18px;
+}
+
+.featurecard {
+    min-height: 170px;
+    border: 2px solid #b7b7b7;
+    border-radius: 16px;
+    background-color: #2b2b2b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 14px;
+    padding-right: 10px;
+    padding-bottom: 14px;
+    padding-left: 10px;
+}
+
+.featureicon {
+    font-size: 2.2rem;
+    color: #f2f2f2;
+    margin-bottom: 14px;
+}
+
+.featuretext {
+    font-size: 0.95rem;
+    line-height: 1.3;
+    color: #f2f2f2;
+}
+
+.mainframe6 {
+    background-color: #242424;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: white;
+}
+
+.descriptiontitle {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #f6f6f6;
+}
+
+.descriptionimage {
+    display: block;
+    width: 60%;
+    height: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.descriptiontext {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #a8a8a8;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.descriptionbutton {
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #777777;
+    border-radius: 50%;
+    color: white;
+    background-color: #242424;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.mainframe7 {
+    background-color: #242424;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    color: white;
+}
+
+.configurationtitle {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    color: #f6f6f6;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.configurationcolumns {
+    display: flex;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.configurationbox {
+    width: 45%;
+    margin-right: 5%;
+    color: #a8a8a8;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.configurationbox h3 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.configurationbox p {
+    margin-bottom: 4px;
+}
+
+.configurationbox strong {
+    display: inline-block;
+    width: 145px;
+    color: #a8a8a8;
+}
+
+.mainframe8 {
+    background-color: #242424;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    color: white;
+}
+
+.newstitle {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    color: white;
+    font-size: 28px;
+}
+
+.newstitle span {
+    color: #777777;
+}
+
+.newsitem {
+    display: flex;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #444444;
+}
+
+.newsvideo {
+    width: 360px;
+    height: 205px;
+    margin-right: 28px;
+    border: none;
+    border-radius: 10px;
+}
+
+.newscontent {
+    padding-top: 20px;
+    color: #a8a8a8;
+}
+
+.newstime {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.newscontent h3 {
+    margin-bottom: 14px;
+    color: white;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.newscontent p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.mainframe9 {
+    background-color: #242424;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    color: white;
+}
+
+.similarproductstitle {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    color: #f6f6f6;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.similarproductsgrid {
+    display: grid;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.similarproductcard {
+    position: relative;
+    color: white;
+}
+
+.similarproductcard img {
+    display: block;
+    width: 100%;
+    height: 265px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.discount {
+    position: absolute;
+    left: 0;
+    top: 230px;
+    padding-top: 8px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    border-radius: 8px;
+    color: white;
+    background-color: #ff5a16;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.productdetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.productdetails p {
+    margin-right: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.productdetails strong {
+    color: white;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+.footersection {
+    background-color: #101010;
+    padding-top: 45px;
+    padding-bottom: 35px;
+    color: white;
+}
+
+.footercolumns {
+    display: flex;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 35px;
+}
+
+.trustpilot {
+    width: 30%;
+    border-right: 1px solid #333333;
+}
+
+.trustpilot h2 {
+    margin-bottom: 18px;
+    font-size: 24px;
+}
+
+.trustpilot h2 span {
+    color: #00b67a;
+}
+
+.truststars {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+
+.trustpilot p {
+    color: #b5b5b5;
+    font-size: 14px;
+}
+
+.footerlinks {
+    width: 35%;
+    padding-left: 45px;
+    border-right: 1px solid #333333;
+}
+
+.footerlinks a {
+    display: block;
+    margin-bottom: 17px;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.footerlinks i {
+    width: 28px;
+    color: #ff5a16;
+}
+
+.community {
+    width: 35%;
+    padding-left: 45px;
+}
+
+.community h2 {
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.sociallinks {
+    display: flex;
+    margin-bottom: 75px;
+}
+
+.sociallinks a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    margin-right: 15px;
+    border-radius: 50%;
+    color: white;
+    background-color: #272727;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.storelinks {
+    display: flex;
+}
+
+.storelinks a {
+    margin-right: 15px;
+    padding-top: 12px;
+    padding-right: 15px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    border: 1px solid #666666;
+    border-radius: 22px;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.storelinks i {
+    margin-right: 6px;
+}
+
+.footerbottom {
+    position: relative;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 35px;
+    border-top: 1px solid #333333;
+    color: #b5b5b5;
+    font-size: 16px;
+}
+
+.footerbottom p {
+    margin-bottom: 18px;
+}
+
+.footerbottom a {
+    display: block;
+    margin-bottom: 18px;
+    color: #b5b5b5;
+    text-decoration: none;
+}
+
+.locationlinks {
+    position: absolute;
+    right: 0;
+    top: 35px;
+}
+
+.locationlinks span {
+    margin-left: 30px;
+    color: white;
+}
+
+.locationlinks i {
+    margin-right: 8px;
+}
+
+@media (max-width: 900px) {
+    .headcontainer {
+        height: 140px;
+        padding-top: 70px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    .logo {
+        top: 10px;
+        left: 15px;
+        width: 125px;
+        height: 42px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .searchform {
+        height: auto;
+    }
+
+    .cart {
+        right: 55px;
+        top: 25px;
+        font-size: 28px;
+    }
+
+    .Profile {
+        right: 15px;
+        top: 25px;
+        font-size: 30px;
+    }
+
+    .mainframe1 {
+        margin-top: 140px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .box {
+        display: block;
+        width: 90%;
+    }
+
+    .poster {
+        width: 100%;
+    }
+
+    .poster img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .details {
+        width: 100%;
+        margin-top: 25px;
+        padding: 20px;
+    }
+
+    .details h1 {
+        font-size: 24px;
+    }
+
+    .box2 {
+        display: grid;
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "about"
+            "tags"
+            "reviews"
+            "details";
+    }
+
+    .usertags {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .visuals,
+    .video1,
+    .gallery,
+    .gamefeaturestitle,
+    .gamefeaturesgrid,
+    .descriptiontitle,
+    .descriptiontext,
+    .configurationtitle,
+    .configurationcolumns,
+    .newstitle,
+    .newsitem,
+    .similarproductstitle,
+    .similarproductsgrid,
+    .footercolumns,
+    .footerbottom {
+        width: 90%;
+    }
+
+    .video1 {
+        display: block;
+    }
+
+    .video1 video {
+        width: 100%;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .childgall1,
+    .childgall2,
+    .childgall3,
+    .childgall4,
+    .childgall5 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: auto;
+        grid-row-end: auto;
+    }
+
+    .gallery img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .gamefeaturesgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .descriptionimage {
+        width: 90%;
+        height: auto;
+    }
+
+    .configurationcolumns {
+        display: block;
+    }
+
+    .configurationbox {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .newsitem {
+        display: block;
+    }
+
+    .newsvideo {
+        width: 100%;
+        height: 220px;
+        margin-right: 0px;
+    }
+
+    .similarproductsgrid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .similarproductcard img {
+        height: auto;
+    }
+
+    .footercolumns {
+        display: block;
+    }
+
+    .trustpilot,
+    .footerlinks,
+    .community {
+        width: 100%;
+        padding-left: 0px;
+        padding-bottom: 30px;
+        border-right: none;
+    }
+
+    .storelinks {
+        display: block;
+    }
+
+    .storelinks a {
+        display: inline-block;
+        margin-bottom: 12px;
+    }
+
+    .locationlinks {
+        position: static;
+        margin-top: 25px;
+    }
+
+    .locationlinks span {
+        display: block;
+        margin-left: 0px;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .gamefeaturesgrid {
+        display: block;
+    }
+
+    .featurecard {
+        margin-bottom: 15px;
+    }
+
+    .details h1 {
+        font-size: 21px;
+    }
+
+    .price span:last-child {
+        font-size: 22px;
+    }
+}
